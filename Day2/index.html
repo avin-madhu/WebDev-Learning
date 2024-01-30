@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form Website</h1>
+
+    <form id="my-form">
+        
+        <br><label for="fname">First Name:  </label>
+        <input  autocomplete="off" id="fname" name="fname" type="text">
+        <br>
+        <label for="lname">Last Name:  </label>
+        <input id="lname" name="lname" type="text">
+        <br>
+        <br>
+        <label for="email">E-mail: </label>
+        <input id="email" name="email" type="email">
+        <br>
+        <br>
+        <label >Message: </label>
+        <textarea id="message-box" name="message" cols="30" rows="10"></textarea>
+        <br><br>
+        <button onclick="submitForm()" type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"> </script>
+    
+</body>
+</html>
