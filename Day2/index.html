@@ -4,30 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
     <h1>Form Website</h1>
 
     <form id="my-form">
         
-        <br><label for="fname">First Name:  </label>
-        <input  autocomplete="off" id="fname" name="fname" type="text">
-        <br>
-        <label for="lname">Last Name:  </label>
-        <input id="lname" name="lname" type="text">
-        <br>
-        <br>
-        <label for="email">E-mail: </label>
-        <input id="email" name="email" type="email">
-        <br>
-        <br>
-        <label >Message: </label>
-        <textarea id="message-box" name="message" cols="30" rows="10"></textarea>
-        <br><br>
-        <button onclick="submitForm()" type="submit">Submit</button>
+        <div class="mb-3" class="formContainer">
+                <br><label class="form-label" for="fname">First Name:  </label>
+                <input aria-label="First Name" class="form-control"  autocomplete="off" id="fname" name="fname" type="text">
+                <br>
+                <label class="form-label" for="lname">Last Name:  </label>
+                <input aria-label="Last Name" class="form-control" id="lname" name="lname" type="text">
+                <br>
+                <br>
+                <label class="form-label" for="email">E-mail: </label>
+                <input aria-label="E-mail" class="form-control" id="email" name="email" type="email">
+                <br>
+                <br>
+                <label aria-label="Message" class="form-label" >Message: </label>
+                <textarea class="form-control" id="message-box" name="message" cols="30" rows="5"></textarea>
+                <br><br>
+                <button class="btn btn-primary" onclick="submitForm()" type="submit">Submit</button>
+        </div>
     </form>
 
     <script src="script.js"> </script>
+
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            margin-left: 500px;
+            margin-right: 500px;
+        }
+        .formContainer{
+            width: 50%;
+            margin-top: 10px;
+            background-color: rgb(219, 219, 255);
+
+        }
+      
+    </style>
     
 </body>
 </html>
