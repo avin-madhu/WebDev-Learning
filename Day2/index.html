@@ -12,20 +12,15 @@
     <form id="my-form">
         
         <div class="mb-3" class="formContainer">
-                <br><label class="form-label" for="fname">First Name:  </label>
-                <input aria-label="First Name" class="form-control"  autocomplete="off" id="fname" name="fname" type="text">
-                <br>
-                <label class="form-label" for="lname">Last Name:  </label>
-                <input aria-label="Last Name" class="form-control" id="lname" name="lname" type="text">
-                <br>
-                <br>
-                <label class="form-label" for="email">E-mail: </label>
-                <input aria-label="E-mail" class="form-control" id="email" name="email" type="email">
-                <br>
-                <br>
-                <label aria-label="Message" class="form-label" >Message: </label>
-                <textarea class="form-control" id="message-box" name="message" cols="30" rows="5"></textarea>
-                <br><br>
+                
+                <input placeholder="First name" aria-label="First Name" class="form-control"  autocomplete="off" id="fname" name="fname" type="text">
+                
+                <input placeholder="Last name" aria-label="Last Name" class="form-control" id="lname" name="lname" type="text">
+
+                <input placeholder="E-mail" aria-label="E-mail" class="form-control" id="email" name="email" type="email">
+
+                <textarea placeholder="Message" class="form-control" id="message-box" name="message" cols="30" rows="5"></textarea>
+
                 <button class="btn btn-primary" onclick="submitForm()" type="submit">Submit</button>
         </div>
     </form>
@@ -44,10 +39,17 @@
         .formContainer{
             width: 50%;
             margin-top: 10px;
-            background-color: rgb(219, 219, 255);
-
+            background-color: rgb(128, 128, 245);
         }
-      
+        input{
+            margin-top: 30px;
+        }
+        textarea{
+            margin-top: 30px;
+        }
+        button{
+            margin-top: 30px;
+        }
     </style>
     
 </body>
